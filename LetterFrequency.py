@@ -1,7 +1,8 @@
 #LetterFrequency.py
-#Name:
-#Date:
-#Assignment:
+#Name: Riley Mayfield
+#Date:  1/18
+#Assignment: Lab 5
+#Purpose: Become more familiar with disecting strings
 
 #This program will create a CSV file of frequencies based on a text file.
 #Use Excel or similar spreadsheet software to visualize the frequencies of the CSV file.
@@ -14,10 +15,10 @@ def countLetters(message):
 
     freq = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
-    #loop through each letter
-    #Find the position in the alphabet
-    #Increase the frequency at that position. If position was 5, then frequencies[5] = frequencies[5] + 1
-
+    for ch in message: 
+        if ch in alpha: 
+            index = alpha.index(ch) 
+            freq[index] += 1
 
 
     #Create the output text in the format A,5\n if there were 5 letter A in the message.
